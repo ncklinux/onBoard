@@ -37,7 +37,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    "@nuxtjs/google-fonts",
   ],
+
+  googleFonts: {
+    display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
+    families: {
+      "Open+Sans": true,
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
