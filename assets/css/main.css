@@ -1,0 +1,7 @@
+*:not(.fa) {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+}
