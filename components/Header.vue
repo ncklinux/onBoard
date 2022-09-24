@@ -30,7 +30,7 @@ export default class extends Vue {
 
 <style lang="scss" scoped>
 .nav-link {
-    padding: 0;
+  padding: 0;
 }
 
 #navbar-toggle-collapse > ul > li > a {
