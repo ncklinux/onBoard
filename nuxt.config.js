@@ -41,7 +41,7 @@ export default {
   googleFonts: {
     display: "swap", // 'auto' | 'block' | 'swap' | 'fallback' | 'optional'
     families: {
-      "Open+Sans": true,
+      "Open Sans": true,
     },
   },
 
