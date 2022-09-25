@@ -1,0 +1,54 @@
+{
+  "menu": [
+    {
+      "link": "/",
+      "text": "Homepage"
+    },
+    {
+      "link": "/surfboards",
+      "text": "Surfboards"
+    },
+    {
+      "link": "/contact",
+      "text": "Contact"
+    }
+  ],
+  "customerServiceDescription": "Find below most critical links for contact and customer support",
+  "customerService": [
+    {
+      "link": "/contact",
+      "text": "Contact"
+    },
+    {
+      "link": "/repairer",
+      "text": "Repairer"
+    },
+    {
+      "link": "/guarantee",
+      "text": "Guarantee"
+    },
+    {
+      "link": "/shipping-and-returns",
+      "text": "Shipping & returns"
+    }
+  ],
+  "informationDescription": "Looking for information of any kind? Take a look at the links below, we have prepared the most desirable answers to almost anything you might ask.",
+  "information": [
+    {
+      "link": "/faq",
+      "text": "FAQ"
+    },
+    {
+      "link": "/blog",
+      "text": "Blog"
+    },
+    {
+      "link": "/privacy-policy",
+      "text": "Privacy Policy"
+    },
+    {
+      "link": "/terms-and-conditions",
+      "text": "Terms & conditions"
+    }
+  ]
+}

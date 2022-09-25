@@ -1,11 +1,10 @@
-<template>
-  
-</template>
+<template></template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { Vue, Component, Provide } from "nuxt-property-decorator";
 
-export default Vue.extend({
-  name: 'IndexPage'
-})
+@Component
+export default class extends Vue {}
 </script>
+
+<style lang="scss" scoped></style>

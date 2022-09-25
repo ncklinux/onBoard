@@ -1,19 +1,23 @@
 <template>
   <b-navbar toggleable type="light" variant="light">
-    <b-navbar-brand href="#"><img src="~assets/svg/logo.svg" width="44" height="26"></b-navbar-brand>
-
+    <b-navbar-brand href="#"
+      ><img src="~assets/svg/logo.svg" width="44" height="26"
+    /></b-navbar-brand>
     <b-navbar-toggle target="navbar-toggle-collapse">
       <template #default="{ expanded }">
         <span v-if="expanded" class="material-icons">expand_less</span>
         <span v-else class="material-icons">expand_more</span>
       </template>
     </b-navbar-toggle>
-
-    <b-collapse id="navbar-toggle-collapse" is-nav>
+    <b-collapse class="mt-4 mb-1" id="navbar-toggle-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#">Home</b-nav-item>
-        <b-nav-item href="#">Surfboards</b-nav-item>
-        <b-nav-item href="#">Contact</b-nav-item>
+        <b-nav-item
+          class="mb-1"
+          v-for="(item, i) in $store.state.texts.menu"
+          :key="i"
+          :href="item.link"
+          >{{ item.text }}</b-nav-item
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -28,4 +32,16 @@ export default class extends Vue {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nav-link {
+  padding: 0;
+}
+
+#navbar-toggle-collapse > ul > li > a {
+  @include link;
+}
+
+#navbar-toggle-collapse > ul > li > a:hover {
+  color: green;
+}
+</style>
