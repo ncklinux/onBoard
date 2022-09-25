@@ -11,9 +11,13 @@
     </b-navbar-toggle>
     <b-collapse class="mt-4 mb-1" id="navbar-toggle-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item class="mb-1" href="#">Home</b-nav-item>
-        <b-nav-item class="mb-1" href="#">Surfboards</b-nav-item>
-        <b-nav-item class="mb-1" href="#">Contact</b-nav-item>
+        <b-nav-item
+          class="mb-1"
+          v-for="(item, i) in $store.state.texts.menu"
+          :key="i"
+          :href="item.link"
+          >{{ item.text }}</b-nav-item
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

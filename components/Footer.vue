@@ -4,27 +4,23 @@
       <b-col>
         <h6>Customer Service</h6>
         <p class="infromationParagraph">
-          Find below most critical links for contact and customer support
+          {{ $store.state.texts.customerServiceDescription }}
         </p>
         <ul class="p-0 customerList">
-          <li><a href="#" class="customerListLink">Contact us</a></li>
-          <li><a href="#" class="customerListLink">Repairer</a></li>
-          <li><a href="#" class="customerListLink">Guarantee</a></li>
-          <li><a href="#" class="customerListLink">Shipping & returns</a></li>
+          <li v-for="(item, i) in $store.state.texts.customerService" :key="i">
+            <a :href="item.link" class="customerListLink">{{ item.text }}</a>
+          </li>
         </ul>
       </b-col>
       <b-col>
         <h6>Information</h6>
         <p class="infromationParagraph">
-          Looking for information of any kind? Take a look at the links below,
-          we have prepared the most desirable answers to almost anything you
-          might ask.
+          {{ $store.state.texts.informationDescription }}
         </p>
         <ul class="p-0 customerList">
-          <li><a href="#" class="customerListLink">FAQ</a></li>
-          <li><a href="#" class="customerListLink">Blog</a></li>
-          <li><a href="#" class="customerListLink">Privacy Policy</a></li>
-          <li><a href="#" class="customerListLink">Terms & conditions</a></li>
+          <li v-for="(item, i) in $store.state.texts.information" :key="i">
+            <a :href="item.link" class="customerListLink">{{ item.text }}</a>
+          </li>
         </ul>
       </b-col>
     </b-row>
