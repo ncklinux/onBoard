@@ -9,10 +9,10 @@
         <span v-else class="material-icons">expand_more</span>
       </template>
     </b-navbar-toggle>
-    <b-collapse class="mt-4 mb-1" id="navbar-toggle-collapse" is-nav>
-      <b-navbar-nav class="ml-auto">
+    <b-collapse id="navbar-toggle-collapse" is-nav>
+      <b-navbar-nav class="ml-auto mt-4 mb-2">
         <b-nav-item
-          class="mb-1"
+          class="mb-2"
           v-for="(item, i) in $store.state.texts.menu"
           :key="i"
           :href="item.link"
