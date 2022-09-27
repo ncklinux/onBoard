@@ -2,7 +2,7 @@
   <b-container fluid>
     <b-row class="mt-3">
       <b-col>
-        <h6>Customer Service</h6>
+        <h6>{{ $store.state.texts.customerServiceTitle }}</h6>
         <p class="infromationParagraph">
           {{ $store.state.texts.customerServiceDescription }}
         </p>
@@ -13,7 +13,7 @@
         </ul>
       </b-col>
       <b-col>
-        <h6>Information</h6>
+        <h6>{{ $store.state.texts.informationTitle }}</h6>
         <p class="infromationParagraph">
           {{ $store.state.texts.informationDescription }}
         </p>

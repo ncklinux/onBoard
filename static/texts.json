@@ -13,6 +13,7 @@
       "text": "Contact"
     }
   ],
+  "customerServiceTitle": "Customer Service",
   "customerServiceDescription": "Find below most critical links for contact and customer support",
   "customerService": [
     {
@@ -32,6 +33,7 @@
       "text": "Shipping & returns"
     }
   ],
+  "informationTitle": "Information",
   "informationDescription": "Looking for information of any kind? Take a look at the links below, we have prepared the most desirable answers to almost anything you might ask.",
   "information": [
     {

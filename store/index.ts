@@ -18,10 +18,12 @@ interface Information {
 
 interface Texts {
   menu: Array<Menu>;
-  customerService: Array<CustomerService>;
+  customerServiceTitle: string;
   customerServiceDescription: string;
-  information: Array<Information>;
+  customerService: Array<CustomerService>;
+  informationTitle: string;
   informationDescription: string;
+  information: Array<Information>;
 }
 
 @Module({
