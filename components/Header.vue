@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable type="light" variant="light">
-    <b-navbar-brand href="#"
+    <b-navbar-brand href="/"
       ><img src="~assets/svg/logo.svg" width="44" height="26"
     /></b-navbar-brand>
     <b-navbar-toggle target="navbar-toggle-collapse">
