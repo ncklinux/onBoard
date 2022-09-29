@@ -1,4 +1,8 @@
-<template></template>
+<template>
+  <div>
+    <Banner />
+  </div>
+</template>
 
 <script lang="ts">
 import { Vue, Component, Provide } from "nuxt-property-decorator";
