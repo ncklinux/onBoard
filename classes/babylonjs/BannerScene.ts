@@ -32,7 +32,7 @@ export class BannerScene {
       "camera",
       -Math.PI / 2,
       Math.PI / 2.5,
-      35,
+      3,
       new Vector3(0, 0, 0)
     );
     camera.attachControl(this.canvas, true);
