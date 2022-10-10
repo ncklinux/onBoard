@@ -33,16 +33,16 @@ export default class Index extends VuexModule {
   texts = {};
 
   @Mutation
-  setData(data: Texts) {
+  setTexts(data: Texts) {
     this.texts = data;
   }
 
   @Action
-  async getData() {
+  async getTexts() {
     await axios
       .get("http://localhost:3000/texts.json", {})
       .then((rsp: AxiosResponse) => {
-        this.context.commit("setData", rsp.data);
+        this.context.commit("setTexts", rsp.data);
       })
       .catch((err: Error | AxiosError) => {
         console.log("ERROR: ", err);
