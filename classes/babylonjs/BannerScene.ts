@@ -3,7 +3,7 @@ import {
   Scene,
   Vector3,
   HemisphericLight,
-  UniversalCamera,
+  ArcRotateCamera,
   StandardMaterial,
   Color3,
   Color4,
@@ -27,8 +27,16 @@ export class BannerScene {
     const scene = new Scene(this.engine);
     //scene.autoClear = false; // transparent background
     scene.clearColor = new Color4(0.5, 0.8, 0.5, 1);
-    const camera = new UniversalCamera("UniversalCamera", new Vector3(0, 0, -2), this.scene);
+
+    const camera = new ArcRotateCamera(
+      "camera",
+      -Math.PI / 2,
+      Math.PI / 2.5,
+      35,
+      new Vector3(0, 0, 0)
+    );
     camera.attachControl(this.canvas, true);
+
     const hemiLight = new HemisphericLight(
       "hemiLight",
       new Vector3(0, 1, 0),
