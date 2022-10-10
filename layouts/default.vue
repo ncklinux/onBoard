@@ -13,6 +13,7 @@ import { Vue, Component } from "nuxt-property-decorator";
 export default class extends Vue {
   public beforeCreate() {
     this.$store.dispatch("getTexts");
+    this.$store.dispatch("getProducts");
   }
 }
 </script>
