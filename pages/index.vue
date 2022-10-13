@@ -1,6 +1,7 @@
 <template>
   <div>
     <Banner />
+    <Products />
   </div>
 </template>
 
