@@ -1,22 +1,24 @@
 <template>
-  <b-row class="mt-2 rating">
-    <b-col cols="auto">
-      <ul class="list m-0 p-0">
-        <li
-          v-for="star in maxStars"
-          :key="star"
-          class="star"
-          :class="{ active: star <= stars }"
-          @click="rate(star)"
-        >
-          <span class="material-icons">{{ status(star) }}</span>
-        </li>
-      </ul>
-    </b-col>
-    <b-col>
-      <span v-if="hasCounter">{{ stars }} of {{ maxStars }}</span>
-    </b-col>
-  </b-row>
+  <b-container fluid class="m-0 p-0">
+    <b-row class="mt-2 rating">
+      <b-col cols="auto">
+        <ul class="list m-0 p-0">
+          <li
+            v-for="star in maxStars"
+            :key="star"
+            class="star"
+            :class="{ active: star <= stars }"
+            @click="rate(star)"
+          >
+            <span class="material-icons">{{ status(star) }}</span>
+          </li>
+        </ul>
+      </b-col>
+      <b-col>
+        <span v-if="hasCounter">{{ stars }} of {{ maxStars }}</span>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
 <script lang="ts">
