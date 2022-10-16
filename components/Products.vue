@@ -18,6 +18,7 @@
               <b-card-text class="title">
                 {{ item.title }}
               </b-card-text>
+              <Rating :grade="item.rate" :hasCounter="true" />
               <b-card-text class="description">
                 {{ item.description }}
               </b-card-text>
