@@ -7,7 +7,7 @@
       "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
       "price": 780.99,
       "availability": true,
-      "rate": 3
+      "rate": 3.99
     },
     {
       "link": "nuxt",
@@ -16,7 +16,7 @@
       "description": "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.",
       "price": 887.99,
       "availability": true,
-      "rate": 2
+      "rate": 1.73
     },
     {
       "link": "typescript",
@@ -25,7 +25,7 @@
       "description": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.",
       "price": 1087.99,
       "availability": true,
-      "rate": 4
+      "rate": 4.52
     },
     {
       "link": "javascript",
@@ -34,7 +34,7 @@
       "description": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.",
       "price": 1788.99,
       "availability": true,
-      "rate": 3
+      "rate": 2.58
     },
     {
       "link": "npm",
@@ -43,7 +43,7 @@
       "description": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.",
       "price": 1284.99,
       "availability": true,
-      "rate": 2
+      "rate": 2.88
     },
     {
       "link": "vue",
@@ -52,7 +52,7 @@
       "description": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
       "price": 444.99,
       "availability": true,
-      "rate": 3
+      "rate": 3.20
     },
     {
       "link": "bootstrap",
@@ -61,7 +61,7 @@
       "description": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.",
       "price": 334.99,
       "availability": true,
-      "rate": 4
+      "rate": 4.80
     },
     {
       "link": "scss",
@@ -70,7 +70,7 @@
       "description": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.",
       "price": 888.99,
       "availability": true,
-      "rate": 3
+      "rate": 3.99
     }
   ]
 }
