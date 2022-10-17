@@ -36,6 +36,7 @@ export class BannerScene {
       new Vector3(0, 0, 0)
     );
     camera.attachControl(this.canvas, true);
+    camera.inputs.removeByType("ArcRotateCameraMouseWheelInput");
 
     const hemiLight = new HemisphericLight(
       "hemiLight",
