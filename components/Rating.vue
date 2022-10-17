@@ -4,13 +4,13 @@
       <b-col cols="auto">
         <ul class="list m-0 p-0">
           <li
-            v-for="star in maxStars"
-            :key="star"
+            v-for="item in maxStars"
+            :key="item"
             class="star"
-            :class="{ active: star <= stars }"
-            @click="rate(star)"
+            :class="{ active: item <= stars }"
+            @click="rate(item)"
           >
-            <span class="material-icons">{{ status(star) }}</span>
+            <span class="material-icons">{{ status(item) }}</span>
           </li>
         </ul>
       </b-col>
@@ -33,7 +33,7 @@ export default class extends Vue {
   @Provide() stars = this.grade;
 
   public rate(star: number) {
-    if (typeof star === "number" && star <= this.maxStars && star >= 0)
+    if (star <= this.maxStars && star >= 0)
       this.stars = this.stars === star ? star - 1 : star;
   }
 
