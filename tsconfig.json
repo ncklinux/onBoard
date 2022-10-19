@@ -27,7 +27,8 @@
       "@nuxt/types",
       "@types/node",
       "babylonjs",
-      "babylonjs-loaders"
+      "babylonjs-loaders",
+      "@nuxtjs/i18n"
     ]
   },
   "exclude": [

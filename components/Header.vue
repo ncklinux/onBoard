@@ -18,13 +18,25 @@
           :href="item.link"
           >{{ item.text }}</b-nav-item
         >
+        <p class="switchLanguage mt-4 mb-1" v-if="$store.state.texts.various">
+          {{
+            $store.state.texts.various.switchLanguage[$i18n.getLocaleCookie()]
+          }}
+        </p>
+        <b-nav-item
+          class="mb-1"
+          v-for="(langItem, i) in $i18n.locales"
+          :key="i + '_lang'"
+          href="#"
+          >{{ langItem }}</b-nav-item
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Provide } from "nuxt-property-decorator";
+import { Vue, Component } from "nuxt-property-decorator";
 
 @Component
 export default class extends Vue {
@@ -43,5 +55,9 @@ export default class extends Vue {
 
 #navbar-toggle-collapse > ul > li > a:hover {
   color: green;
+}
+
+.switchLanguage {
+  font-size: 0.75rem;
 }
 </style>

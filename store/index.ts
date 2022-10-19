@@ -16,6 +16,11 @@ interface Information {
   text: string;
 }
 
+interface Languages {
+  en?: string;
+  fr?: string;
+}
+
 interface Texts {
   menu: Array<Menu>;
   customerServiceTitle: string;
@@ -24,6 +29,7 @@ interface Texts {
   informationTitle: string;
   informationDescription: string;
   information: Array<Information>;
+  various: Record<string, Languages>;
 }
 
 interface surfboardItem {

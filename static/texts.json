@@ -52,5 +52,11 @@
       "link": "/terms-and-conditions",
       "text": "Terms & conditions"
     }
-  ]
+  ],
+  "various": {
+    "switchLanguage": {
+      "en": "Switch language",
+      "fr": "Changer de langue"
+    }
+  }
 }
