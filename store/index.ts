@@ -17,8 +17,8 @@ interface Information {
 }
 
 interface Languages {
-  en: string;
-  fr: string;
+  en?: string;
+  fr?: string;
 }
 
 interface Texts {
