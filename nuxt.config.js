@@ -50,10 +50,16 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     "bootstrap-vue/nuxt",
     "nuxt-material-design-icons-iconfont",
+    "@nuxtjs/i18n",
   ],
 
   styleResources: {
     scss: ["~/assets/scss/*.scss"],
+  },
+
+  i18n: {
+    locales: ['en', 'fr'],
+    defaultLocale: 'en'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
