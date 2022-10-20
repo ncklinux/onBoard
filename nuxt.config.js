@@ -51,6 +51,7 @@ export default {
     "bootstrap-vue/nuxt",
     "nuxt-material-design-icons-iconfont",
     "@nuxtjs/i18n",
+    "cookie-universal-nuxt"
   ],
 
   styleResources: {

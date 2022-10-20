@@ -18,6 +18,7 @@
     "babylonjs-loaders": "^5.25.0",
     "bootstrap": "^4.6.1",
     "bootstrap-vue": "^2.21.2",
+    "cookie-universal-nuxt": "^2.2.2",
     "core-js": "^3.19.3",
     "nuxt": "^2.15.8",
     "nuxt-material-design-icons-iconfont": "^1.0.2",
