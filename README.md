@@ -21,12 +21,12 @@ $ npm run generate
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ### `Motivation`
-Knowledge of Vue and Nuxt is highly regarded in the front-end field! Most of the Vue/Nuxt projects I've seen so far aren't use all the [features](https://typescript.nuxtjs.org) the [documentation](https://nuxtjs.org/docs/get-started/installation) has to offer. In general, to make things more interesting, I also decided to port a combination of [Nuxt](https://nuxtjs.org) and [Babylon.js](https://www.babylonjs.com).
+Knowledge of Vue and Nuxt is highly regarded in the front-end field! Most of the Vue/Nuxt projects I've seen so far aren't use all the [features](https://typescript.nuxtjs.org) and [modules](https://modules.nuxtjs.org) the [documentation](https://nuxtjs.org/docs/get-started/installation) has to offer. In general, to make things more interesting, I also decided to port a combination of [Nuxt](https://nuxtjs.org) and [Babylon.js](https://www.babylonjs.com).
 
 ### `License`
 GNU General Public License v3.0 - See the [LICENSE](https://github.com/ncklinux/onBoard/blob/master/LICENSE) file in this project for details.
 ### `Disclaimer`
-This website is distributed FREE & WITHOUT ANY WARRANTY. Report any bugs or suggestions here as an [issue](https://github.com/ncklinux/onBoard/issues/new).
+This project is distributed FREE & WITHOUT ANY WARRANTY. Report any bugs or suggestions here as an [issue](https://github.com/ncklinux/onBoard/issues/new).
 
 ### `Contributing`
 It's best to open an [issue](https://github.com/ncklinux/onBoard/issues/new). It's even better to accompany it with a Pull Request ;)
