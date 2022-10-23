@@ -37,6 +37,18 @@ This project is distributed FREE & WITHOUT ANY WARRANTY. Report any bugs or sugg
 
 It's best to open an [issue](https://github.com/ncklinux/onBoard/issues/new). It's even better to accompany it with a Pull Request ;)
 
+## Commit Messages
+
+This repository follows the [Conventional Commits](https://www.conventionalcommits.org) standard, the commit message should never exceed 77 characters and should be structured as follows:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
 ## Note
 
 Gonna keep this project as open source forever! [Watch this repo](https://github.com/ncklinux/onBoard/subscription), Star it and follow me on [GitHub](https://github.com/ncklinux) and [Twitter](https://twitter.com/ncklinux)
