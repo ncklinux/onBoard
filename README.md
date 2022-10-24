@@ -39,7 +39,7 @@ It's best to open an [issue](https://github.com/ncklinux/onBoard/issues/new). It
 
 ## Commit Messages
 
-This repository follows the [Conventional Commits](https://www.conventionalcommits.org) standard, the commit message should never exceed 77 characters and should be structured as follows:
+This repository follows the [Conventional Commits](https://www.conventionalcommits.org) specification, the commit message should never exceed 100 characters and must be structured as follows:
 
 ```
 <type>[optional scope]: <description>
