@@ -27,7 +27,7 @@
           class="mb-1"
           v-for="(langItem, i) in $i18n.locales"
           :key="i + '_lang'"
-          href="#"
+          :to="switchLocalePath(langItem)"
           >{{ langItem }}</b-nav-item
         >
       </b-navbar-nav>
