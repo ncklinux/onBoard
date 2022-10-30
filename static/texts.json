@@ -2,55 +2,100 @@
   "menu": [
     {
       "link": "/",
-      "text": "Home page"
+      "text": {
+        "en": "Home page",
+        "fr": "Page d'accueil"
+      }
     },
     {
       "link": "/surfboards",
-      "text": "Surfboards"
+      "text": {
+        "en": "Surfboards",
+        "fr": "Planches de surf"
+      }
     },
     {
       "link": "/contact",
-      "text": "Contact"
+      "text": {
+        "en": "Contact",
+        "fr": "Contact"
+      }
     }
   ],
-  "customerServiceTitle": "Customer Service",
-  "customerServiceDescription": "Find below most critical links for contact and customer support",
+  "customerServiceTitle": {
+    "en": "Customer Service",
+    "fr": "Service à la clientèle"
+  },
+  "customerServiceDescription": {
+    "en": "Find below most critical links for contact and customer support",
+    "fr": "Vous trouverez ci-dessous les liens les plus importants pour le contact et l'assistance à la clientèle."
+  },
   "customerService": [
     {
       "link": "/contact",
-      "text": "Contact"
+      "text": {
+        "en": "Contact",
+        "fr": "Contact"
+      }
     },
     {
       "link": "/repairer",
-      "text": "Repairer"
+      "text": {
+        "en": "Repairer",
+        "fr": "Réparateur"
+      }
     },
     {
       "link": "/guarantee",
-      "text": "Guarantee"
+      "text": {
+        "en": "Guarantee",
+        "fr": "Garantie"
+      }
     },
     {
       "link": "/shipping-and-returns",
-      "text": "Shipping & returns"
+      "text": {
+        "en": "Shipping & returns",
+        "fr": "Expédition et retours"
+      }
     }
   ],
-  "informationTitle": "Information",
-  "informationDescription": "Looking for information of any kind? Take a look at the links below, we have prepared the most desirable answers to almost anything you might ask.",
+  "informationTitle": {
+    "en": "Information",
+    "fr": "Information"
+  },
+  "informationDescription": {
+    "en": "Looking for information of any kind? Take a look at the links below, we have prepared the most desirable answers to almost anything you might ask.",
+    "fr": "Vous recherchez des informations de toute nature ? Jetez un coup d'œil aux liens ci-dessous, nous avons préparé les réponses les plus souhaitables à presque tout ce que vous pourriez demander."
+  },
   "information": [
     {
       "link": "/faq",
-      "text": "FAQ"
+      "text": {
+        "en": "FAQ",
+        "fr": "FAQ"
+      }
     },
     {
       "link": "/blog",
-      "text": "Blog"
+      "text": {
+        "en": "Blog",
+        "fr": "Blog"
+      }
     },
     {
       "link": "/privacy-policy",
-      "text": "Privacy Policy"
+      "text": {
+        "en": "Privacy Policy",
+        "fr": "Politique de confidentialité"
+      }
     },
     {
       "link": "/terms-and-conditions",
-      "text": "Terms & conditions"
+      "text": {
+        "en": "Terms & conditions",
+        "fr": "Termes et conditions"
+      }
     }
   ],
   "various": {

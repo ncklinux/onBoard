@@ -1,33 +1,32 @@
 import { Module, VuexModule, Mutation, Action } from "vuex-module-decorators";
 import axios, { AxiosError, AxiosResponse } from "axios";
 
-interface Menu {
-  link: string;
-  text: string;
-}
-
-interface CustomerService {
-  link: string;
-  text: string;
-}
-
-interface Information {
-  link: string;
-  text: string;
-}
-
 interface Languages {
   en?: string;
   fr?: string;
 }
+interface Menu {
+  link: string;
+  text: Record<string, Languages>;
+}
+
+interface CustomerService {
+  link: string;
+  text: Record<string, Languages>;
+}
+
+interface Information {
+  link: string;
+  text: Record<string, Languages>;
+}
 
 interface Texts {
   menu: Array<Menu>;
-  customerServiceTitle: string;
-  customerServiceDescription: string;
+  customerServiceTitle: Record<string, Languages>;
+  customerServiceDescription: Record<string, Languages>;
   customerService: Array<CustomerService>;
-  informationTitle: string;
-  informationDescription: string;
+  informationTitle: Record<string, Languages>;
+  informationDescription: Record<string, Languages>;
   information: Array<Information>;
   various: Record<string, Languages>;
 }

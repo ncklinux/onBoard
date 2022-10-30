@@ -16,11 +16,11 @@
           v-for="(item, i) in $store.state.texts.menu"
           :key="i"
           :href="item.link"
-          >{{ item.text }}</b-nav-item
+          >{{ item.text[$i18n.locale] }}</b-nav-item
         >
         <p class="switchLanguage mt-4 mb-1" v-if="$store.state.texts.various">
           {{
-            $store.state.texts.various.switchLanguage[$i18n.getLocaleCookie()]
+            $store.state.texts.various.switchLanguage[$i18n.locale]
           }}
         </p>
         <b-nav-item
