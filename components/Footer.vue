@@ -2,24 +2,38 @@
   <b-container fluid>
     <b-row class="mt-3">
       <b-col>
-        <h6>{{ $store.state.texts.customerServiceTitle }}</h6>
-        <p class="infromationParagraph">
-          {{ $store.state.texts.customerServiceDescription }}
+        <h6 v-if="$store.state.texts.customerServiceTitle">
+          {{ $store.state.texts.customerServiceTitle[$i18n.locale] }}
+        </h6>
+        <p
+          class="infromationParagraph"
+          v-if="$store.state.texts.customerServiceDescription"
+        >
+          {{ $store.state.texts.customerServiceDescription[$i18n.locale] }}
         </p>
         <ul class="p-0 customerList">
           <li v-for="(item, i) in $store.state.texts.customerService" :key="i">
-            <a :href="item.link" class="customerListLink">{{ item.text }}</a>
+            <a :href="item.link" class="customerListLink">{{
+              item.text[$i18n.locale]
+            }}</a>
           </li>
         </ul>
       </b-col>
       <b-col>
-        <h6>{{ $store.state.texts.informationTitle }}</h6>
-        <p class="infromationParagraph">
-          {{ $store.state.texts.informationDescription }}
+        <h6 v-if="$store.state.texts.informationTitle">
+          {{ $store.state.texts.informationTitle[$i18n.locale] }}
+        </h6>
+        <p
+          class="infromationParagraph"
+          v-if="$store.state.texts.informationDescription"
+        >
+          {{ $store.state.texts.informationDescription[$i18n.locale] }}
         </p>
         <ul class="p-0 customerList">
           <li v-for="(item, i) in $store.state.texts.information" :key="i">
-            <a :href="item.link" class="customerListLink">{{ item.text }}</a>
+            <a :href="item.link" class="customerListLink">{{
+              item.text[$i18n.locale]
+            }}</a>
           </li>
         </ul>
       </b-col>
