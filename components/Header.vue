@@ -3,7 +3,7 @@
     <b-navbar-brand href="/"
       ><img src="~assets/svg/logo.svg" width="44" height="26"
     /></b-navbar-brand>
-    <b-navbar-toggle target="navbar-toggle-collapse">
+    <b-navbar-toggle target="navbar-toggle-collapse" class="pr-0">
       <template #default="{ expanded }">
         <span v-if="expanded" class="material-icons">close</span>
         <span v-else class="material-icons">menu</span>
