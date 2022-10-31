@@ -3,10 +3,10 @@
     <b-navbar-brand href="/"
       ><img src="~assets/svg/logo.svg" width="44" height="26"
     /></b-navbar-brand>
-    <b-navbar-toggle target="navbar-toggle-collapse">
+    <b-navbar-toggle target="navbar-toggle-collapse" class="pr-0">
       <template #default="{ expanded }">
-        <span v-if="expanded" class="material-icons">expand_less</span>
-        <span v-else class="material-icons">expand_more</span>
+        <span v-if="expanded" class="material-icons">close</span>
+        <span v-else class="material-icons">menu</span>
       </template>
     </b-navbar-toggle>
     <b-collapse id="navbar-toggle-collapse" is-nav>
@@ -19,9 +19,7 @@
           >{{ item.text[$i18n.locale] }}</b-nav-item
         >
         <p class="switchLanguage mt-4 mb-1" v-if="$store.state.texts.various">
-          {{
-            $store.state.texts.various.switchLanguage[$i18n.locale]
-          }}
+          {{ $store.state.texts.various.switchLanguage[$i18n.locale] }}
         </p>
         <b-nav-item
           class="mb-1"
@@ -47,6 +45,15 @@ export default class extends Vue {
 <style lang="scss" scoped>
 .nav-link {
   padding: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 #navbar-toggle-collapse > ul > li > a {
