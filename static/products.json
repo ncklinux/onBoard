@@ -3,8 +3,14 @@
     {
       "link": "babylon",
       "image": "babylon.png",
-      "title": "Babylon",
-      "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+      "title": {
+        "en": "Babylon.js",
+        "fr": "Babylon.js"
+      },
+      "description": {
+        "en": "Babylon.js has a powerful GUI system that offers countless widgets, controls, and properties to help you create rich GUIs.",
+        "fr": "Babylon.js possède un système d'interface graphique puissant qui offre d'innombrables widgets, contrôles et propriétés pour vous aider à créer des interfaces graphiques riches."
+      },
       "price": 780.99,
       "availability": true,
       "rate": 3.99
@@ -12,8 +18,14 @@
     {
       "link": "nuxt",
       "image": "nuxt.png",
-      "title": "Nuxt",
-      "description": "Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.",
+      "title": {
+        "en": "Nuxt",
+        "fr": "Nuxt"
+      },
+      "description": {
+        "en": "Build your next Vue.js application with confidence using Nuxt. An open source framework making web development simple and powerful",
+        "fr": "Créez votre prochaine application Vue.js en toute confiance grâce à Nuxt. Un framework open source qui rend le développement web simple et puissant"
+      },
       "price": 887.99,
       "availability": true,
       "rate": 1.73
@@ -21,8 +33,14 @@
     {
       "link": "typescript",
       "image": "typescript.png",
-      "title": "TypeScript",
-      "description": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.",
+      "title": {
+        "en": "TypeScript",
+        "fr": "TypeScript"
+      },
+      "description": {
+        "en": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale",
+        "fr": "TypeScript est un langage de programmation fortement typé qui s'appuie sur JavaScript et vous offre de meilleurs outils à toutes les échelles."
+      },
       "price": 1087.99,
       "availability": true,
       "rate": 4.52
@@ -30,8 +48,14 @@
     {
       "link": "javascript",
       "image": "javascript.png",
-      "title": "JavaScript",
-      "description": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel.",
+      "title": {
+        "en": "JavaScript",
+        "fr": "JavaScript"
+      },
+      "description": {
+        "en": "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web",
+        "fr": "JavaScript est le langage de programmation le plus populaire au monde. JavaScript est le langage de programmation du Web"
+      },
       "price": 1788.99,
       "availability": true,
       "rate": 2.58
@@ -39,8 +63,14 @@
     {
       "link": "npm",
       "image": "npm.png",
-      "title": "NPM",
-      "description": "Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.",
+      "title": {
+        "en": "npm",
+        "fr": "npm"
+      },
+      "description": {
+        "en": "Relied upon by more than 11 million developers worldwide, npm is committed to making JavaScript development elegant, productive, and safe",
+        "fr": "Utilisé par plus de 11 millions de développeurs dans le monde, npm s'engage à rendre le développement JavaScript élégant, productif et sûr"
+      },
       "price": 1284.99,
       "availability": true,
       "rate": 2.88
@@ -48,26 +78,44 @@
     {
       "link": "vue",
       "image": "vue.png",
-      "title": "Vue.js",
-      "description": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
+      "title": {
+        "en": "Vue.js",
+        "fr": "Vue.js"
+      },
+      "description": {
+        "en": "Approachable. Builds on top of standard HTML, CSS and JavaScript with intuitive API and world-class documentation",
+        "fr": "Abordable. Construit sur les standards HTML, CSS et JavaScript avec une API intuitive et une documentation de classe mondiale"
+      },
       "price": 444.99,
       "availability": true,
-      "rate": 3.20
+      "rate": 3.2
     },
     {
       "link": "bootstrap",
       "image": "bootstrap.png",
-      "title": "Bootstrap",
-      "description": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.",
+      "title": {
+        "en": "Bootstrap",
+        "fr": "Bootstrap"
+      },
+      "description": {
+        "en": "Bootstrap utilizes Sass for a modular and customizable architecture",
+        "fr": "Bootstrap utilise Sass pour une architecture modulaire et personnalisable."
+      },
       "price": 334.99,
       "availability": true,
-      "rate": 4.80
+      "rate": 4.8
     },
     {
       "link": "scss",
       "image": "scss.png",
-      "title": "SCSS/SASS",
-      "description": "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.",
+      "title": {
+        "en": "Sass",
+        "fr": "Sass"
+      },
+      "description": {
+        "en": "Sass stands with the protesters against police violence. We encourage our users to get in the streets and join them if you can",
+        "fr": "Sass est aux côtés des manifestants contre les violences policières. Nous encourageons nos utilisateurs à descendre dans la rue et à les rejoindre si vous le pouvez."
+      },
       "price": 888.99,
       "availability": true,
       "rate": 3.99

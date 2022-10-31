@@ -34,8 +34,8 @@ interface Texts {
 interface surfboardItem {
   link: string;
   image: string;
-  title: string;
-  description: string;
+  title: Record<string, Languages>;
+  description: Record<string, Languages>;
   price: number;
   availability: boolean;
 }
