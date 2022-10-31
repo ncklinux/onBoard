@@ -5,7 +5,10 @@
       <b-col sm="10" md="10" lg="10" xl="10">
         <b-row class="rowCustomPadding">
           <b-col
-            sm="12" md="6" lg="3" xl="3"
+            sm="12"
+            md="6"
+            lg="3"
+            xl="3"
             v-for="(item, index) in $store.state.products.surfboards"
             :key="index"
             class="pr-1 pb-3"
@@ -16,11 +19,11 @@
               class="mb-2 productCard"
             >
               <b-card-text class="title">
-                {{ item.title }}
+                {{ item.title[$i18n.locale] }}
               </b-card-text>
               <Rating :grade="item.rate" :hasCounter="true" />
               <b-card-text class="description">
-                {{ item.description }}
+                {{ item.description[$i18n.locale] }}
               </b-card-text>
             </b-card>
           </b-col>
@@ -66,6 +69,6 @@ export default class extends Vue {
 }
 
 .rowCustomPadding {
-    padding-right: 12px;
+  padding-right: 12px;
 }
 </style>
