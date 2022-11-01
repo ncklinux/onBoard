@@ -44,6 +44,8 @@ interface Products {
   surfboards: Array<surfboardItem>;
 }
 
+// TODO: TypeScript runtime validation
+
 @Module({
   namespaced: true,
 })
