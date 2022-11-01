@@ -1,10 +1,5 @@
 import { Module, VuexModule, Mutation, Action } from "vuex-module-decorators";
 import axios, { AxiosError, AxiosResponse } from "axios";
-
-interface Languages {
-  en?: string;
-  fr?: string;
-}
 interface Menu {
   link: string;
   text: Record<string, Languages>;
