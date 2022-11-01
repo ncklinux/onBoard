@@ -102,6 +102,18 @@
     "switchLanguage": {
       "en": "Switch language",
       "fr": "Changer de langue"
+    },
+    "Currency": {
+      "en": "Currency",
+      "fr": "Monnaie"
     }
-  }
+  },
+  "currencies": [
+    {
+      "currency": "EUR"
+    },
+    {
+      "currency": "USD"
+    }
+  ]
 }

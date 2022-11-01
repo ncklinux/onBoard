@@ -15,6 +15,10 @@ interface Information {
   text: Record<string, Languages>;
 }
 
+interface Currencies {
+  currency: string;
+}
+
 interface Texts {
   menu: Array<Menu>;
   customerServiceTitle: Record<string, Languages>;
@@ -24,6 +28,7 @@ interface Texts {
   informationDescription: Record<string, Languages>;
   information: Array<Information>;
   various: Record<string, Languages>;
+  currencies: Array<Currencies>;
 }
 
 interface surfboardItem {
