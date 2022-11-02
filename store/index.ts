@@ -28,7 +28,7 @@ interface Texts {
   selectedCurrency: string;
 }
 
-interface surfboardItem {
+interface productItem {
   link: string;
   image: string;
   title: Record<string, Languages>;
@@ -38,7 +38,7 @@ interface surfboardItem {
 }
 
 interface Products {
-  surfboards: Array<surfboardItem>;
+  items: Array<productItem>;
 }
 
 // TODO: TypeScript runtime validation

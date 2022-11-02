@@ -9,7 +9,7 @@
             md="6"
             lg="3"
             xl="3"
-            v-for="(item, index) in $store.state.products.surfboards"
+            v-for="(item, index) in $store.state.products.items"
             :key="index"
             class="pr-1 pb-3"
           >
