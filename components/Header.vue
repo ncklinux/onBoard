@@ -18,17 +18,19 @@
           :href="item.link"
           >{{ item.text[$i18n.locale] }}</b-nav-item
         >
-        <p class="switchLanguage mt-4 mb-1" v-if="$store.state.texts.various">
-          {{ $store.state.texts.various.switchLanguage[$i18n.locale] }}
-        </p>
-        <b-nav-item
-          class="mb-1"
-          v-for="(langItem, i) in $i18n.locales"
-          :key="i + '_lang'"
-          :to="switchLocalePath(langItem)"
-          >{{ langItem }}</b-nav-item
-        >
       </b-navbar-nav>
+      <commonSwitcher
+        v-if="$store.state.texts.various"
+        :title="$store.state.texts.various.switchLanguage"
+        :data="$i18n.locales"
+        :type="0"
+      />
+      <commonSwitcher
+        v-if="$store.state.texts.various"
+        :title="$store.state.texts.various.Currency"
+        :data="$store.state.texts.currencies"
+        :type="1"
+      />
     </b-collapse>
   </b-navbar>
 </template>
@@ -62,9 +64,5 @@ export default class extends Vue {
 
 #navbar-toggle-collapse > ul > li > a:hover {
   color: green;
-}
-
-.switchLanguage {
-  font-size: 0.75rem;
 }
 </style>

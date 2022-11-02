@@ -15,10 +15,6 @@ interface Information {
   text: Record<string, Languages>;
 }
 
-interface Currencies {
-  currency: string;
-}
-
 interface Texts {
   menu: Array<Menu>;
   customerServiceTitle: Record<string, Languages>;
@@ -28,7 +24,8 @@ interface Texts {
   informationDescription: Record<string, Languages>;
   information: Array<Information>;
   various: Record<string, Languages>;
-  currencies: Array<Currencies>;
+  currencies: Array<string>;
+  selectedCurrency: string;
 }
 
 interface surfboardItem {
@@ -50,7 +47,9 @@ interface Products {
   namespaced: true,
 })
 export default class Index extends VuexModule {
-  texts = {};
+  texts = {
+    selectedCurrency: "",
+  };
   products = {};
 
   @Mutation
@@ -61,6 +60,11 @@ export default class Index extends VuexModule {
   @Mutation
   setProducts(data: Products) {
     this.products = data;
+  }
+
+  @Mutation
+  setCurrency(currency: string) {
+    this.texts.selectedCurrency = currency;
   }
 
   @Action
@@ -85,5 +89,10 @@ export default class Index extends VuexModule {
       .catch((err: Error | AxiosError) => {
         console.log("ERROR: ", err);
       });
+  }
+
+  @Action
+  switcCurrency(currency: string) {
+    this.context.commit("setCurrency", currency);
   }
 }
