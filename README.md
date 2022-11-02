@@ -1,6 +1,6 @@
-# Nuxt e-commerce
+# Vue/Nuxt e-commerce
 
-e-commerce website with TypeScript and 3D capabilities
+e-commerce website with 3D capabilities
 
 ## Build Setup
 
