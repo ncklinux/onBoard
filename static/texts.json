@@ -100,12 +100,24 @@
   ],
   "various": {
     "switchLanguage": {
-      "en": "Switch language",
-      "fr": "Changer de langue"
+      "en": "Language",
+      "fr": "Langue"
     },
-    "Currency": {
+    "currency": {
       "en": "Currency",
       "fr": "Monnaie"
+    },
+    "price": {
+      "en": "Price",
+      "fr": "Prix"
+    },
+    "shoppingCart": {
+      "en": "Shopping cart",
+      "fr": "Panier d'achat"
+    },
+    "emptyCart": {
+      "en": "The cart is empty",
+      "fr": "Le panier est vide"
     }
   },
   "currencies": ["EUR", "USD"],
