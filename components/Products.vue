@@ -1,7 +1,66 @@
 <template>
   <b-container fluid>
     <b-row class="mt-2">
-      <b-col sm="2" md="2" lg="2" xl="2"></b-col>
+      <b-col sm="2" md="2" lg="2" xl="2" class="mb-3 pr-xs-0 pr-sm-0 pr-md-0 pr-lg-0 pr-xl-0">
+        <b-container fluid class="controls">
+          <b-row>
+            <b-col class="pt-3">
+              <b-row>
+                <b-col>
+                  <p v-if="$store.state.texts.various" class="mb-1">
+                    {{ $store.state.texts.various.currency[$i18n.locale] }}
+                  </p>
+                  <p class="description" v-if="$store.state.texts.various">
+                    {{ $store.state.texts.selectedCurrency }}
+                  </p>
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col>
+                  <p v-if="$store.state.texts.various" class="mb-1">
+                    {{ $store.state.texts.various.price[$i18n.locale] }}
+                  </p>
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col class="p-0 pl-3">
+                  <b-form-input
+                    id="input-small"
+                    size="sm"
+                    placeholder="Min"
+                    type="number"
+                    min="0"
+                    max="3333"
+                  ></b-form-input>
+                </b-col>
+                <b-col cols="1">
+                  <p>-</p>
+                </b-col>
+                <b-col class="p-0 pr-3">
+                  <b-form-input
+                    id="input-small"
+                    size="sm"
+                    placeholder="Max"
+                    type="number"
+                    min="0"
+                    max="3333"
+                  ></b-form-input>
+                </b-col>
+              </b-row>
+              <b-row>
+                <b-col>
+                  <p v-if="$store.state.texts.various" class="mt-4 mb-1">
+                    {{ $store.state.texts.various.shoppingCart[$i18n.locale] }}
+                  </p>
+                  <b-badge v-if="$store.state.texts.various" variant="danger">{{
+                    $store.state.texts.various.emptyCart[$i18n.locale]
+                  }}</b-badge>
+                </b-col>
+              </b-row>
+            </b-col>
+          </b-row></b-container
+        >
+      </b-col>
       <b-col sm="10" md="10" lg="10" xl="10">
         <b-row class="rowCustomPadding">
           <b-col
@@ -34,7 +93,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Provide } from "nuxt-property-decorator";
+import { Vue, Component } from "nuxt-property-decorator";
 
 @Component
 export default class extends Vue {
@@ -70,5 +129,12 @@ export default class extends Vue {
 
 .rowCustomPadding {
   padding-right: 12px;
+}
+
+.controls {
+  background-color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  min-height: 100%;
 }
 </style>
