@@ -27,7 +27,7 @@
       />
       <commonSwitcher
         v-if="$store.state.texts.various"
-        :title="$store.state.texts.various.Currency"
+        :title="$store.state.texts.various.currency"
         :data="$store.state.texts.currencies"
         :type="1"
       />

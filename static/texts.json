@@ -100,12 +100,16 @@
   ],
   "various": {
     "switchLanguage": {
-      "en": "Switch language",
-      "fr": "Changer de langue"
+      "en": "Language",
+      "fr": "Langue"
     },
-    "Currency": {
+    "currency": {
       "en": "Currency",
       "fr": "Monnaie"
+    },
+    "price": {
+      "en": "Price",
+      "fr": "Prix"
     }
   },
   "currencies": ["EUR", "USD"],
