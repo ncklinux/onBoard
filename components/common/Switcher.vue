@@ -29,7 +29,6 @@ export default class extends Vue {
     if (this.type === 0) {
       this.$router.replace(this.switchLocalePath(item));
     } else {
-      //console.log("CHANGE CURRENCY: ", item);
       this.$store.dispatch("switcCurrency", item);
     }
   }
