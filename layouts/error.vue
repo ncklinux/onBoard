@@ -6,7 +6,7 @@
           404 Page not found
         </h6>
         <h6 v-else>An error occurred</h6>
-        <b-button size="sm" href="/">Home page</b-button>
+        <b-button class="shadow-none" size="sm" href="/">Home page</b-button>
       </b-col>
     </b-row>
   </b-container>
