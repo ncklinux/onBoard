@@ -12,6 +12,7 @@
         "fr": "Babylon.js possède un système d'interface graphique puissant qui offre d'innombrables widgets, contrôles et propriétés pour vous aider à créer des interfaces graphiques riches."
       },
       "price": 780.99,
+      "discountRate": 30,
       "availability": true,
       "rate": 3.99
     },
@@ -42,6 +43,7 @@
         "fr": "TypeScript est un langage de programmation fortement typé qui s'appuie sur JavaScript et vous offre de meilleurs outils à toutes les échelles."
       },
       "price": 1087.99,
+      "discountRate": 30,
       "availability": true,
       "rate": 4.52
     },
@@ -102,6 +104,7 @@
         "fr": "Bootstrap utilise Sass pour une architecture modulaire et personnalisable."
       },
       "price": 334.99,
+      "discountRate": 30,
       "availability": true,
       "rate": 4.8
     },
