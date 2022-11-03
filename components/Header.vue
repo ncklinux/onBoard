@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable type="light" variant="light">
     <b-navbar-brand href="/"
-      ><img src="~assets/svg/logo.svg" width="44" height="26"
+      ><img src="~assets/svg/logo.svg" width="80" height="26"
     /></b-navbar-brand>
     <b-navbar-toggle target="navbar-toggle-collapse" class="pr-0">
       <template #default="{ expanded }">
@@ -63,6 +63,6 @@ export default class extends Vue {
 }
 
 #navbar-toggle-collapse > ul > li > a:hover {
-  color: green;
+  color: #dc3545;
 }
 </style>

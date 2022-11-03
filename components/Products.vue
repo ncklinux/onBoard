@@ -111,7 +111,7 @@
                     }}</span>
                   </b-col>
                   <b-col class="text-right">
-                    <b-button variant="danger" size="sm" class="addToCart"
+                    <b-button variant="danger" size="sm" class="addToCart shadow-none"
                       ><span class="material-icons pl-1 pt-2 pr-1 pb-2"
                         >add_shopping_cart</span
                       ></b-button

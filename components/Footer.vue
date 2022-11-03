@@ -65,6 +65,6 @@ export default class extends Vue {
 }
 
 .customerListLink:hover {
-  color: green;
+  color: #dc3545;
 }
 </style>

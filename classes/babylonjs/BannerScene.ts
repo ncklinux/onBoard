@@ -26,7 +26,7 @@ export class BannerScene {
   CreateScene(): Scene {
     const scene = new Scene(this.engine);
     //scene.autoClear = false; // transparent background
-    scene.clearColor = new Color4(0.5, 0.8, 0.5, 1);
+    scene.clearColor = Color4.FromHexString("#dc3545");
 
     const camera = new ArcRotateCamera(
       "camera",

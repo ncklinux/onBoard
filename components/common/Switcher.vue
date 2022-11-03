@@ -49,6 +49,6 @@ export default class extends Vue {
 }
 
 #navbar-toggle-collapse > ul > li > a:hover {
-  color: green;
+  color: #dc3545;
 }
 </style>
