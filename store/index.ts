@@ -34,6 +34,7 @@ interface productItem {
   title: Record<string, Languages>;
   description: Record<string, Languages>;
   price: number;
+  discountRate?: number;
   availability: boolean;
 }
 

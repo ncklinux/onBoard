@@ -1,7 +1,13 @@
 <template>
   <b-container fluid>
     <b-row class="mt-2">
-      <b-col sm="2" md="2" lg="2" xl="2" class="mb-3 pr-xs-0 pr-sm-0 pr-md-0 pr-lg-0 pr-xl-0">
+      <b-col
+        sm="2"
+        md="2"
+        lg="2"
+        xl="2"
+        class="mb-3 pr-xs-0 pr-sm-0 pr-md-0 pr-lg-0 pr-xl-0"
+      >
         <b-container fluid class="controls">
           <b-row>
             <b-col class="pt-3">
@@ -76,13 +82,42 @@
               :img-src="`http://localhost:3000/img/products/${item.image}`"
               img-top
               class="mb-2 productCard"
+              body-class="d-flex flex-column"
             >
+              <b-badge
+                pill
+                variant="danger"
+                class="discountRate"
+                v-if="item.discountRate"
+                >-{{ item.discountRate }}%</b-badge
+              >
               <b-card-text class="title">
                 {{ item.title[$i18n.locale] }}
               </b-card-text>
               <Rating :grade="item.rate" :hasCounter="true" />
               <b-card-text class="description">
                 {{ item.description[$i18n.locale] }}
+              </b-card-text>
+              <b-card-text class="price mt-auto">
+                <b-row class="no-gutters">
+                  <b-col cols="auto">
+                    {{ item.price }}
+                  </b-col>
+                  <b-col>
+                    <span class="material-icons pt-1 pl-1">{{
+                      $store.state.texts.selectedCurrency === "EUR"
+                        ? "euro"
+                        : "attach_money"
+                    }}</span>
+                  </b-col>
+                  <b-col class="text-right">
+                    <b-button variant="danger" size="sm" class="addToCart"
+                      ><span class="material-icons pl-1 pt-2 pr-1 pb-2"
+                        >add_shopping_cart</span
+                      ></b-button
+                    >
+                  </b-col>
+                </b-row>
               </b-card-text>
             </b-card>
           </b-col>
@@ -136,5 +171,25 @@ export default class extends Vue {
   font-size: 0.875rem;
   font-weight: 600;
   min-height: 100%;
+}
+
+.discountRate {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+}
+
+.price {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.material-icons {
+  font-size: 0.875rem;
+}
+
+.addToCart {
+  border-radius: 50%;
 }
 </style>
