@@ -102,7 +102,8 @@
                 <b-row class="no-gutters">
                   <b-col cols="auto">
                     <template v-if="item.discountRate">
-                      <del class="del">{{ item.price }}</del><br>
+                      <del class="del">{{ item.price }}</del
+                      ><br />
                       {{ discountCalculation(item.price, item.discountRate) }}
                     </template>
                     <template v-else>
@@ -110,7 +111,7 @@
                     </template>
                   </b-col>
                   <b-col>
-                    <br v-if="item.discountRate">
+                    <br v-if="item.discountRate" />
                     <span class="material-icons pt-1 pl-1">{{
                       $store.state.texts.selectedCurrency === "EUR"
                         ? "euro"
@@ -145,7 +146,8 @@ export default class extends Vue {
   public discountCalculation(price: number, rate: number) {
     if (rate) {
       rate = rate / 100;
-      return (price - price * rate).toFixed(2);
+      // prettier-ignore
+      return (price - (price * rate)).toFixed(2);
     } else {
       return price;
     }
