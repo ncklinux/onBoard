@@ -101,9 +101,17 @@
               <b-card-text class="price mt-auto">
                 <b-row class="no-gutters">
                   <b-col cols="auto">
-                    {{ item.price }}
+                    <template v-if="item.discountRate">
+                      <del class="del">{{ item.price }}</del
+                      ><br />
+                      {{ discountCalculation(item.price, item.discountRate) }}
+                    </template>
+                    <template v-else>
+                      {{ item.price }}
+                    </template>
                   </b-col>
                   <b-col>
+                    <br v-if="item.discountRate" />
                     <span class="material-icons pt-1 pl-1">{{
                       $store.state.texts.selectedCurrency === "EUR"
                         ? "euro"
@@ -111,7 +119,10 @@
                     }}</span>
                   </b-col>
                   <b-col class="text-right">
-                    <b-button variant="danger" size="sm" class="addToCart shadow-none"
+                    <b-button
+                      variant="danger"
+                      size="sm"
+                      class="addToCart shadow-none"
                       ><span class="material-icons pl-1 pt-2 pr-1 pb-2"
                         >add_shopping_cart</span
                       ></b-button
@@ -132,7 +143,15 @@ import { Vue, Component } from "nuxt-property-decorator";
 
 @Component
 export default class extends Vue {
-  public mounted() {}
+  public discountCalculation(price: number, rate: number) {
+    if (rate) {
+      rate = rate / 100;
+      // prettier-ignore
+      return (price - (price * rate)).toFixed(2);
+    } else {
+      return price;
+    }
+  }
 }
 </script>
 
@@ -191,5 +210,9 @@ export default class extends Vue {
 
 .addToCart {
   border-radius: 50%;
+}
+
+del {
+  color: #999999;
 }
 </style>
