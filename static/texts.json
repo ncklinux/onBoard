@@ -120,6 +120,6 @@
       "fr": "Le panier est vide"
     }
   },
-  "currencies": ["EUR", "USD"],
+  "currencies": ["eur", "usd"],
   "selectedCurrency": "EUR"
 }
