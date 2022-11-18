@@ -19,18 +19,24 @@
           >{{ item.text[$i18n.locale] }}</b-nav-item
         >
       </b-navbar-nav>
-      <commonSwitcher
-        v-if="$store.state.texts.various"
-        :title="$store.state.texts.various.switchLanguage"
-        :data="$i18n.locales"
-        :type="0"
-      />
-      <commonSwitcher
-        v-if="$store.state.texts.various"
-        :title="$store.state.texts.various.currency"
-        :data="$store.state.texts.currencies"
-        :type="1"
-      />
+      <b-row>
+        <b-col cols="auto">
+          <commonSwitcher
+            v-if="$store.state.texts.various"
+            :title="$store.state.texts.various.switchLanguage"
+            :data="$i18n.locales"
+            :type="0"
+          />
+        </b-col>
+        <b-col>
+          <commonSwitcher
+            v-if="$store.state.texts.various"
+            :title="$store.state.texts.various.currency"
+            :data="$store.state.texts.currencies"
+            :type="1"
+          />
+        </b-col>
+      </b-row>
     </b-collapse>
   </b-navbar>
 </template>
