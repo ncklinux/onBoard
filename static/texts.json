@@ -118,8 +118,49 @@
     "emptyCart": {
       "en": "The cart is empty",
       "fr": "Le panier est vide"
+    },
+    "sortProductsTitle": {
+      "en": "Sort product list by ",
+      "fr": "Trier la liste des produits par "
     }
   },
   "currencies": ["eur", "usd"],
-  "selectedCurrency": "EUR"
+  "selectedCurrency": "EUR",
+  "sortBy": [
+    {
+      "sort": "lowestPriceFirst",
+      "text": {
+        "en": "Lowest price first",
+        "fr": "Le prix le plus bas d'abord"
+      }
+    },
+    {
+      "sort": "highestPriceFirst",
+      "text": {
+        "en": "Highest price first",
+        "fr": "Le prix le plus élevé en premier"
+      }
+    },
+    {
+      "sort": "customerRating",
+      "text": {
+        "en": "Customer rating",
+        "fr": "Évaluation des clients"
+      }
+    },
+    {
+      "sort": "categoryAZ",
+      "text": {
+        "en": "Category A-Z",
+        "fr": "Catégorie A-Z"
+      }
+    },
+    {
+      "sort": "categoryZA",
+      "text": {
+        "en": "Category Z-A",
+        "fr": "Catégorie Z-A"
+      }
+    }
+  ]
 }
