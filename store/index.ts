@@ -15,6 +15,11 @@ interface Information {
   text: Record<string, Languages>;
 }
 
+interface sortItem {
+  sort: string;
+  text: Record<string, Languages>;
+}
+
 interface Texts {
   menu: Array<Menu>;
   customerServiceTitle: Record<string, Languages>;
@@ -26,6 +31,7 @@ interface Texts {
   various: Record<string, Languages>;
   currencies: Array<string>;
   selectedCurrency: string;
+  sortBy: Array<sortItem>;
 }
 
 interface productItem {
