@@ -68,6 +68,25 @@
         >
       </b-col>
       <b-col sm="10" md="10" lg="10" xl="10">
+        <b-row>
+          <b-col class="filters mb-3 p-3 text-right">
+            <b-dropdown
+              right
+              v-if="$store.state.texts.various"
+              :text="$store.state.texts.various.sortProductsTitle[$i18n.locale]"
+              variant="danger"
+              size="sm"
+              class="sortDropdown m-2"
+            >
+              <b-dropdown-item
+                v-for="(item, i) in $store.state.texts.sortBy"
+                :key="i"
+                @click="sortBy(item.sort)"
+                >{{ item.text[$i18n.locale] }}</b-dropdown-item
+              >
+            </b-dropdown>
+          </b-col>
+        </b-row>
         <b-row class="rowCustomPadding">
           <b-col
             sm="12"
@@ -152,6 +171,10 @@ export default class extends Vue {
       return price;
     }
   }
+
+  public sortBy(sort: string) {
+    console.log("SORT BY: ", sort);
+  }
 }
 </script>
 
@@ -214,5 +237,18 @@ export default class extends Vue {
 
 del {
   color: #999999;
+}
+
+.filters {
+  background-color: white;
+  margin-left: 0.938rem;
+  margin-right: 1rem;
+  font-size: 0.875rem;
+}
+
+::v-deep .btn-sm,
+.btn-group-sm > .btn,
+.dropdown-menu > * {
+  font-size: 0.875rem;
 }
 </style>
