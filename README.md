@@ -25,7 +25,7 @@ For detailed explanation on how things work, check out the [documentation](https
 
 Knowledge of Vue and Nuxt is highly regarded in the front-end field! Most of the Vue/Nuxt projects I've seen so far aren't use all the [features](https://typescript.nuxtjs.org) and [modules](https://modules.nuxtjs.org) the [documentation](https://nuxtjs.org/docs/get-started/installation) has to offer. In general, to make things more interesting, I also decided to port a combination of [Nuxt](https://nuxtjs.org) and [Babylon.js](https://www.babylonjs.com).
 
-![Screenshot](./static/screenshot.png)
+![Screenshot](./static/screenshot_20221121.png)
 
 ## License
 
