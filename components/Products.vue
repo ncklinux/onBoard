@@ -81,6 +81,7 @@
               <b-dropdown-item
                 v-for="(item, i) in $store.state.texts.sortBy"
                 :key="i"
+                :disabled="item.disabled"
                 @click="sortBy(item.sort)"
                 >{{ item.text[$i18n.locale] }}</b-dropdown-item
               >

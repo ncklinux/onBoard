@@ -129,6 +129,7 @@
   "sortBy": [
     {
       "sort": "lowestPriceFirst",
+      "disabled": false,
       "text": {
         "en": "Lowest price first",
         "fr": "Le prix le plus bas d'abord"
@@ -136,6 +137,7 @@
     },
     {
       "sort": "highestPriceFirst",
+      "disabled": false,
       "text": {
         "en": "Highest price first",
         "fr": "Le prix le plus élevé en premier"
@@ -143,6 +145,7 @@
     },
     {
       "sort": "customerRating",
+      "disabled": true,
       "text": {
         "en": "Customer rating",
         "fr": "Évaluation des clients"
@@ -150,6 +153,7 @@
     },
     {
       "sort": "categoryAZ",
+      "disabled": true,
       "text": {
         "en": "Category A-Z",
         "fr": "Catégorie A-Z"
@@ -157,6 +161,7 @@
     },
     {
       "sort": "categoryZA",
+      "disabled": true,
       "text": {
         "en": "Category Z-A",
         "fr": "Catégorie Z-A"
