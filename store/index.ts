@@ -17,6 +17,7 @@ interface Information {
 
 interface sortItem {
   sort: string;
+  disabled: boolean;
   text: Record<string, Languages>;
 }
 
