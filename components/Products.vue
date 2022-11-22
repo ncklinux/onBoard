@@ -114,7 +114,7 @@
               <b-card-text class="title">
                 {{ item.title[$i18n.locale] }}
               </b-card-text>
-              <Rating :grade="item.rate" :hasCounter="true" />
+              <Rating :grade="item.starRate" :hasCounter="true" />
               <b-card-text class="description">
                 {{ item.description[$i18n.locale] }}
               </b-card-text>
