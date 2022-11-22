@@ -14,7 +14,8 @@
       "price": 780.99,
       "discountRate": 30,
       "availability": true,
-      "starRate": 3.99
+      "starRate": 3.99,
+      "isNew": true
     },
     {
       "link": "nuxt",
@@ -29,7 +30,8 @@
       },
       "price": 887.99,
       "availability": true,
-      "starRate": 1.73
+      "starRate": 1.73,
+      "isNew": true
     },
     {
       "link": "typescript",
@@ -45,7 +47,8 @@
       "price": 1087.99,
       "discountRate": 30,
       "availability": true,
-      "starRate": 4.52
+      "starRate": 4.52,
+      "isNew": false
     },
     {
       "link": "javascript",
@@ -60,7 +63,8 @@
       },
       "price": 1788.99,
       "availability": true,
-      "starRate": 2.58
+      "starRate": 2.58,
+      "isNew": true
     },
     {
       "link": "npm",
@@ -75,7 +79,8 @@
       },
       "price": 1284.99,
       "availability": true,
-      "starRate": 2.88
+      "starRate": 2.88,
+      "isNew": false
     },
     {
       "link": "vue",
@@ -90,7 +95,8 @@
       },
       "price": 444.99,
       "availability": true,
-      "starRate": 3.2
+      "starRate": 3.2,
+      "isNew": true
     },
     {
       "link": "bootstrap",
@@ -106,7 +112,8 @@
       "price": 334.99,
       "discountRate": 30,
       "availability": true,
-      "starRate": 4.8
+      "starRate": 4.8,
+      "isNew": false
     },
     {
       "link": "scss",
@@ -121,7 +128,8 @@
       },
       "price": 888.99,
       "availability": true,
-      "starRate": 3.99
+      "starRate": 3.99,
+      "isNew": true
     }
   ]
 }

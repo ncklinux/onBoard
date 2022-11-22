@@ -111,6 +111,14 @@
                 v-if="item.discountRate"
                 >-{{ item.discountRate }}%</b-badge
               >
+              <b-badge
+                pill
+                variant="success"
+                class="new"
+                :style="item.discountRate ? '' : 'top: 1.25rem;'"
+                v-if="item.isNew"
+                >{{ $store.state.texts.various.new[$i18n.locale] }}</b-badge
+              >
               <b-card-text class="title">
                 {{ item.title[$i18n.locale] }}
               </b-card-text>
@@ -219,6 +227,12 @@ export default class extends Vue {
 .discountRate {
   position: absolute;
   top: 1.25rem;
+  left: 1.25rem;
+}
+
+.new {
+  position: absolute;
+  top: 2.7rem;
   left: 1.25rem;
 }
 
