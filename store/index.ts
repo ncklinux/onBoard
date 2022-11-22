@@ -43,6 +43,7 @@ interface productItem {
   price: number;
   discountRate?: number;
   availability: boolean;
+  starRate: number;
 }
 
 interface Products {

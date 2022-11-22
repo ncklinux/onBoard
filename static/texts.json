@@ -122,6 +122,10 @@
     "sortProductsTitle": {
       "en": "Sort product list by ",
       "fr": "Trier la liste des produits par "
+    },
+    "new": {
+      "en": "New",
+      "fr": "New"
     }
   },
   "currencies": ["eur", "usd"],
