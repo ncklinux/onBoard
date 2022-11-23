@@ -115,7 +115,7 @@
                 pill
                 variant="success"
                 class="new"
-                :style="item.discountRate ? '' : 'top: 1.25rem;'"
+                :style="item.discountRate ? 'top: 2.7rem;' : 'top: 1.25rem;'"
                 v-if="item.isNew"
                 >{{ $store.state.texts.various.new[$i18n.locale] }}</b-badge
               >
@@ -232,7 +232,6 @@ export default class extends Vue {
 
 .new {
   position: absolute;
-  top: 2.7rem;
   left: 1.25rem;
 }
 

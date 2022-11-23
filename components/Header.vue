@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable type="light" variant="light">
+  <b-navbar toggleable type="light" variant="light" class="headerNavbar">
     <b-navbar-brand href="/"
       ><img src="~assets/svg/logo.svg" width="80" height="26"
     /></b-navbar-brand>
@@ -51,6 +51,11 @@ export default class extends Vue {
 </script>
 
 <style lang="scss" scoped>
+
+.headerNavbar {
+  background-color: white !important;
+}
+
 .nav-link {
   padding: 0;
 }

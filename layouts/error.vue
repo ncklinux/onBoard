@@ -27,7 +27,7 @@ export default class extends Vue {
 }
 
 .page {
-    margin-top: 10rem !important;
-    margin-bottom: 10rem;
+  margin-top: 10rem !important;
+  margin-bottom: 10rem;
 }
 </style>
