@@ -15,7 +15,7 @@
       }
     },
     {
-      "link": "/contact",
+      "link": "/service/contact",
       "text": {
         "en": "Contact",
         "fr": "Contact"
@@ -32,28 +32,28 @@
   },
   "customerService": [
     {
-      "link": "/contact",
+      "link": "/service/contact",
       "text": {
         "en": "Contact",
         "fr": "Contact"
       }
     },
     {
-      "link": "/repairer",
+      "link": "/service/repairer",
       "text": {
         "en": "Repairer",
         "fr": "Réparateur"
       }
     },
     {
-      "link": "/guarantee",
+      "link": "/service/guarantee",
       "text": {
         "en": "Guarantee",
         "fr": "Garantie"
       }
     },
     {
-      "link": "/shipping-and-returns",
+      "link": "/service/shipping-and-returns",
       "text": {
         "en": "Shipping & returns",
         "fr": "Expédition et retours"
@@ -70,28 +70,28 @@
   },
   "information": [
     {
-      "link": "/faq",
+      "link": "/information/faq",
       "text": {
         "en": "FAQ",
         "fr": "FAQ"
       }
     },
     {
-      "link": "/blog",
+      "link": "/information/blog",
       "text": {
         "en": "Blog",
         "fr": "Blog"
       }
     },
     {
-      "link": "/privacy-policy",
+      "link": "/information/privacy-policy",
       "text": {
         "en": "Privacy Policy",
         "fr": "Politique de confidentialité"
       }
     },
     {
-      "link": "/terms-and-conditions",
+      "link": "/information/terms-and-conditions",
       "text": {
         "en": "Terms & conditions",
         "fr": "Termes et conditions"
@@ -126,6 +126,62 @@
     "new": {
       "en": "New",
       "fr": "New"
+    },
+    "contact": {
+      "en": "Contact",
+      "fr": "Contacter"
+    },
+    "workingDatesAndHours": {
+      "en": "Monday to Saturnday: 9:00 - 17:00",
+      "fr": "Du lundi au samedi : 9:00 - 17:00"
+    },
+    "eshopTelephoneNumber": {
+      "en": "+1 (000) 000-0000",
+      "fr": "+1 (000) 000-0000"
+    },
+    "eshopEmail": {
+      "en": "contact@e-shop.local",
+      "fr": "contact@e-shop.local"
+    },
+    "skypeChat": {
+      "en": "Skype chat",
+      "fr": "Skype chat"
+    },
+    "addressTitle": {
+      "en": "Address",
+      "fr": "Adresse"
+    },
+    "addressText": {
+      "en": "00000 Test Highway<br />Test, LA 00000<br />United States",
+      "fr": "00000 Test Highway<br />Test, LA 00000<br />United States"
+    },
+    "formDescription": {
+      "en": "Please provide some final pieces of information and our team will respond as soon as possible. To speed up the process, please describe your question or issue in as much detail as possible.",
+      "fr": "Veuillez fournir quelques derniers éléments d'information et notre équipe vous répondra dans les meilleurs délais. Pour accélérer le processus, veuillez décrire votre question ou votre problème de la manière la plus détaillée possible."
+    },
+    "formFirstname": {
+      "en": "Firstname *",
+      "fr": "Prénom *"
+    },
+    "formLastname": {
+      "en": "Lastname *",
+      "fr": "Nom de famille *"
+    },
+    "formEmail": {
+      "en": "E-mail *",
+      "fr": "E-mail *"
+    },
+    "formTelephone": {
+      "en": "Telephone *",
+      "fr": "Téléphone *"
+    },
+    "formMessage": {
+      "en": "Message  * (please do not enter personal, private, or financial information, such as credit card numbers or passwords)",
+      "fr": "Message * (veuillez ne pas saisir d'informations personnelles, privées ou financières, telles que des numéros de carte de crédit ou des mots de passe)"
+    },
+    "formSend": {
+      "en": "Send form",
+      "fr": "Envoyer le formulaire"
     }
   },
   "currencies": ["eur", "usd"],
