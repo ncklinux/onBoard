@@ -31,6 +31,7 @@
               <b-row>
                 <b-col class="p-0 pl-3">
                   <b-form-input
+                    class="controlsForms"
                     id="input-small"
                     size="sm"
                     placeholder="Min"
@@ -44,6 +45,7 @@
                 </b-col>
                 <b-col class="p-0 pr-3">
                   <b-form-input
+                    class="controlsForms"
                     id="input-small"
                     size="sm"
                     placeholder="Max"
@@ -224,6 +226,10 @@ export default class extends Vue {
   min-height: 100%;
 }
 
+.controlsForms {
+  @include formsFontSize;
+}
+
 .discountRate {
   position: absolute;
   top: 1.25rem;
@@ -263,6 +269,6 @@ del {
 ::v-deep .btn-sm,
 .btn-group-sm > .btn,
 .dropdown-menu > * {
-  font-size: 0.875rem;
+  @include formsFontSize;
 }
 </style>
