@@ -38,6 +38,7 @@
               <b-col>
                 <b-button
                   variant="success"
+                  shadow-none
                   size="sm"
                   href="mailto:contact@e-shop.local"
                   ><span class="material-icons pr-2">mail</span
@@ -78,7 +79,7 @@
                   {{ $store.state.texts.various.formDescription[$i18n.locale] }}
                 </div>
                 <b-form-input
-                  class="mb-2"
+                  class="contactForm mb-2"
                   v-model="firstname"
                   size="sm"
                   :placeholder="
@@ -86,7 +87,7 @@
                   "
                 ></b-form-input>
                 <b-form-input
-                  class="mb-2"
+                  class="contactForm mb-2"
                   v-model="lastname"
                   size="sm"
                   :placeholder="
@@ -94,7 +95,7 @@
                   "
                 ></b-form-input>
                 <b-form-input
-                  class="mb-2"
+                  class="contactForm mb-2"
                   v-model="email"
                   size="sm"
                   :placeholder="
@@ -102,7 +103,7 @@
                   "
                 ></b-form-input>
                 <b-form-input
-                  class="mb-2"
+                  class="contactForm mb-2"
                   v-model="telephone"
                   size="sm"
                   :placeholder="
@@ -110,6 +111,7 @@
                   "
                 ></b-form-input>
                 <b-form-textarea
+                  class="contactForm"
                   id="textarea"
                   v-model="message"
                   :placeholder="
@@ -153,7 +155,7 @@ export default class extends Vue {
 
 <style lang="scss" scoped>
 @mixin commonText {
-  font-size: 0.75rem;
+  @include formsFontSize;
   color: #333333;
 }
 
@@ -175,5 +177,9 @@ export default class extends Vue {
   background-color: white;
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.contactForm {
+  @include formsFontSize;
 }
 </style>

@@ -7,3 +7,7 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+@mixin formsFontSize {
+  font-size: 0.75rem;
+}
