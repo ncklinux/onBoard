@@ -1,24 +1,25 @@
 <template>
   <b-container fluid>
-    <b-row class="mt-3 mb-4">
+    <b-row class="mt-0 mb-4">
       <b-col v-if="$store.state.texts.various">
         <template v-if="$route.params.slug === 'contact'">
-          <b-container fluid class="box m-0 p-3">
-            <b-row class="mb-4">
-              <b-col>
-                <div class="title">
-                  {{ $store.state.texts.various.contact[$i18n.locale] }}
-                </div>
+          <b-container fluid class="m-0 p-0">
+            <b-row class="mb-3">
+              <b-col class="m-0 p-0">
+                <commonHeader
+                  v-if="$store.state.texts.various"
+                  :title="$store.state.texts.various.contact"
+                  :text="$store.state.texts.various.contactHeaderText"
+                />
               </b-col>
             </b-row>
+          </b-container>
+
+          <b-container fluid class="box m-0 p-3">
             <b-row class="mb-2">
               <b-col>
                 <div class="text">
-                  {{
-                    $store.state.texts.various.workingDatesAndHours[
-                      $i18n.locale
-                    ]
-                  }}
+                  {{ $store.state.texts.various.contactText[$i18n.locale] }}
                 </div>
               </b-col>
             </b-row>
@@ -69,6 +70,24 @@
                   class="text"
                   v-html="$store.state.texts.various.addressText[$i18n.locale]"
                 ></div>
+              </b-col>
+            </b-row>
+            <b-row class="mt-2">
+              <b-col>
+                <div class="title">
+                  {{
+                    $store.state.texts.various.workingDatesAndHoursTitle[
+                      $i18n.locale
+                    ]
+                  }}
+                </div>
+                <div class="text">
+                  {{
+                    $store.state.texts.various.workingDatesAndHours[
+                      $i18n.locale
+                    ]
+                  }}
+                </div>
               </b-col>
             </b-row>
           </b-container>
