@@ -197,7 +197,7 @@
     }
   },
   "currencies": ["eur", "usd"],
-  "selectedCurrency": "EUR",
+  "selectedCurrency": "eur",
   "sortBy": [
     {
       "sort": "lowestPriceFirst",

@@ -17,7 +17,7 @@
                     {{ $store.state.texts.various.currency[$i18n.locale] }}
                   </p>
                   <p class="description" v-if="$store.state.texts.various">
-                    {{ $store.state.texts.selectedCurrency }}
+                    {{ $store.state.texts.selectedCurrency.toUpperCase() }}
                   </p>
                 </b-col>
               </b-row>

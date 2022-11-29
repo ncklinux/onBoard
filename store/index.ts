@@ -101,7 +101,7 @@ export default class Index extends VuexModule {
   }
 
   @Action
-  switcCurrency(currency: string) {
+  switchCurrency(currency: string) {
     this.context.commit("setCurrency", currency);
   }
 }

@@ -29,7 +29,7 @@ export default class extends Vue {
     if (this.type === 0) {
       this.$router.replace(this.switchLocalePath(item));
     } else {
-      this.$store.dispatch("switcCurrency", item);
+      this.$store.dispatch("switchCurrency", item);
     }
   }
 }
