@@ -271,4 +271,9 @@ del {
 .dropdown-menu > * {
   @include formsFontSize;
 }
+
+::v-deep .dropdown-menu > li > a:active {
+  color: white;
+  background-color: #dc3545 !important;
+}
 </style>
