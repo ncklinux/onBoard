@@ -194,6 +194,26 @@
     "formSend": {
       "en": "Send form",
       "fr": "Envoyer le formulaire"
+    },
+    "formErrorFirstName": {
+      "en": "Firstname required",
+      "fr": "Prénom obligatoire"
+    },
+    "formErrorLastName": {
+      "en": "Lastname required",
+      "fr": "Nom de famille requis"
+    },
+    "formErrorEmail": {
+      "en": "Email required",
+      "fr": "Email requis"
+    },
+    "formErrorTelephone": {
+      "en": "Telephone required (only numbers and 12 in length)",
+      "fr": "Téléphone requis (uniquement les numéros et 12 de longueur)"
+    },
+    "formErrorMessage": {
+      "en": "Message required",
+      "fr": "Message requis"
     }
   },
   "currencies": ["eur", "usd"],
