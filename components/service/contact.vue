@@ -71,7 +71,6 @@
             <div class="title mb-2">Please correct the following error(s):</div>
             <b-alert
               show
-              dismissible
               variant="danger"
               class="alertText mb-1"
               v-for="(error, i) in errors"
