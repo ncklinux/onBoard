@@ -68,7 +68,9 @@
       <b-row>
         <b-col>
           <span v-if="errors.length">
-            <div class="title mb-2">Please correct the following error(s):</div>
+            <div class="title mb-2">
+              {{ $store.state.texts.various.formErrorCorrectionsMessage[$i18n.locale] }}
+            </div>
             <b-alert
               show
               variant="danger"
