@@ -195,6 +195,10 @@
       "en": "Send form",
       "fr": "Envoyer le formulaire"
     },
+    "formErrorCorrectionsMessage": {
+      "en": "Please correct the following error(s):",
+      "fr": "Veuillez corriger la ou les erreurs suivantes:"
+    },
     "formErrorFirstName": {
       "en": "Firstname required",
       "fr": "Prénom obligatoire"
