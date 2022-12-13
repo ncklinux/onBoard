@@ -58,6 +58,7 @@ Gonna keep this project as open source forever! [Watch this repo](https://github
 3D Surfboard by me on [Blender](https://www.blender.org)  
 [Image by macrovector](https://www.freepik.com/free-vector/realistic-blank-surfboard_13153587.htm#query=surfboard&position=11&from_view=keyword) on Freepik  
 Set of icons [Devicon](https://devicon.dev)
+Free photos by [Pexels](https://www.pexels.com)
 
 ## Powered by
 

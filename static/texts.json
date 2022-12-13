@@ -218,6 +218,30 @@
     "formErrorMessage": {
       "en": "Message required",
       "fr": "Message requis"
+    },
+    "repairer": {
+      "en": "Repairer",
+      "fr": "Réparateur"
+    },
+    "repairerHeaderText": {
+      "en": "Should you repair your own surfboard?",
+      "fr": "Faut-il réparer sa propre planche de surf?"
+    },
+    "repairerSubBoxTitle01": {
+      "en": "Try doing it yourself!",
+      "fr": "Essayez de le faire vous-même!"
+    },
+    "repairerSubBoxText01": {
+      "en": "It is, however, something you need to practice to do it successfully. There is more than enough content on line in order to learn and save some money, if you just take the time.",
+      "fr": "Il s'agit toutefois d'une activité que vous devez pratiquer pour la réussir. Il y a plus qu'assez de contenu en ligne pour apprendre et économiser de l'argent, si vous prenez le temps."
+    },
+    "repairerSubBoxTitle02": {
+      "en": "Find the super repair Kit!",
+      "fr": "Trouver le super kit de réparation!"
+    },
+    "repairerSubBoxText02": {
+      "en": "It's easy to find online a complete Kit that includes resin, hardener, fiberglass cloth, sanding sponge, mixing sticks and cup, masking sheets and instructions. Just use your favourite search engine and have fun ;)",
+      "fr": "Il est facile de trouver en ligne un kit complet comprenant la résine, le durcisseur, le tissu en fibre de verre, l'éponge de ponçage, les bâtons et le gobelet de mélange, les feuilles de masquage et les instructions. Utilisez simplement votre moteur de recherche préféré et amusez-vous ;)"
     }
   },
   "currencies": ["eur", "usd"],

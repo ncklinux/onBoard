@@ -16,6 +16,20 @@
           </b-container>
           <serviceContact />
         </template>
+        <template v-if="$route.params.slug === 'repairer'">
+          <b-container fluid class="m-0 p-0">
+            <b-row class="mb-3">
+              <b-col class="m-0 p-0">
+                <commonHeader
+                  v-if="$store.state.texts.various"
+                  :title="$store.state.texts.various.repairer"
+                  :text="$store.state.texts.various.repairerHeaderText"
+                />
+              </b-col>
+            </b-row>
+          </b-container>
+          <serviceRepairer />
+        </template>
       </b-col>
     </b-row>
   </b-container>
