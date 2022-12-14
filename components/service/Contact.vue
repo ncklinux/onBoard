@@ -1,32 +1,41 @@
 <template>
   <div>
-    <b-container fluid class="m-0 parentBox">
-      <b-row class="mb-3 p-0">
-        <b-col class="subBox mr-3 p-0">
-          <b-img
-            src="http://localhost:3000/img/service/repairer/01.jpg"
-            fluid
-            class="mb-3"
-          ></b-img>
-          <div class="title pr-3 pl-3 pb-1">
-            {{ $store.state.texts.various.repairerSubBoxTitle01[$i18n.locale] }}
-          </div>
-          <div class="text pr-3 pl-3 pb-3">
-            {{ $store.state.texts.various.repairerSubBoxText01[$i18n.locale] }}
+    <b-container fluid class="box m-0 p-3">
+      <b-row class="mb-2">
+        <b-col>
+          <div class="text">
+            {{ $store.state.texts.various.contactText[$i18n.locale] }}
           </div>
         </b-col>
-        <b-col class="subBox p-0">
-          <b-img
-            src="http://localhost:3000/img/service/repairer/02.jpg"
-            fluid
-            class="mb-3"
-          ></b-img>
-          <div class="title pr-3 pl-3 pb-1">
-            {{ $store.state.texts.various.repairerSubBoxTitle02[$i18n.locale] }}
-          </div>
-          <div class="text pr-3 pl-3 pb-3">
-            {{ $store.state.texts.various.repairerSubBoxText02[$i18n.locale] }}
-          </div>
+      </b-row>
+      <b-row class="mb-2">
+        <b-col>
+          <b-button variant="success" size="sm" href="tel:+10000000000"
+            ><span class="material-icons pr-2">call</span
+            >{{
+              $store.state.texts.various.eshopTelephoneNumber[$i18n.locale]
+            }}</b-button
+          >
+        </b-col>
+      </b-row>
+      <b-row class="mb-2">
+        <b-col>
+          <b-button
+            variant="success"
+            shadow-none
+            size="sm"
+            href="mailto:contact@e-shop.local"
+            ><span class="material-icons pr-2">mail</span
+            >{{ $store.state.texts.various.eshopEmail[$i18n.locale] }}</b-button
+          >
+        </b-col>
+      </b-row>
+      <b-row class="mb-2">
+        <b-col>
+          <b-button variant="danger" size="sm" href="skype:test?userinfo"
+            ><span class="material-icons pr-2">headset_mic</span
+            >{{ $store.state.texts.various.skypeChat[$i18n.locale] }}</b-button
+          >
         </b-col>
       </b-row>
     </b-container>
@@ -74,6 +83,10 @@ export default class extends Vue {}
   color: #333333;
 }
 
+.material-icons {
+  font-size: 0.875rem;
+}
+
 .title {
   @include commonText;
   font-weight: 600;
@@ -88,14 +101,5 @@ export default class extends Vue {}
   background-color: white;
   margin-left: 1px;
   margin-right: 1px;
-}
-
-.parentBox {
-  margin-left: 1px;
-  margin-right: 1px;
-}
-
-.subBox {
-  background-color: white;
 }
 </style>
