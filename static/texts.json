@@ -227,6 +227,18 @@
       "en": "Message required",
       "fr": "Message requis"
     },
+    "formSendMessageSuccess": {
+      "en": "Your message has been send successfully!",
+      "fr": "Votre message a été envoyé avec succès!"
+    },
+    "formSendMessageError": {
+      "en": "Something went wrong, please try again.",
+      "fr": "Quelque chose s'est mal passé, veuillez réessayer."
+    },
+    "formSendMessage": {
+      "en": "Your message has been send successfully!",
+      "fr": "Votre message a été envoyé avec succès!"
+    },
     "repairer": {
       "en": "Repairer",
       "fr": "Réparateur"
