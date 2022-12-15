@@ -21,6 +21,26 @@
         </span>
       </b-col>
     </b-row>
+    <b-row v-if="messageSendSuccess">
+      <b-col>
+        <b-alert show variant="success" class="alertText mb-1"
+          ><span class="material-icons pr-2">report</span
+          >{{
+            $store.state.texts.various.formSendMessageSuccess[$i18n.locale]
+          }}</b-alert
+        >
+      </b-col>
+    </b-row>
+    <b-row v-if="messageSendError">
+      <b-col>
+        <b-alert show variant="danger" class="alertText mb-1"
+          ><span class="material-icons pr-2">report</span
+          >{{
+            $store.state.texts.various.formSendMessageError[$i18n.locale]
+          }}</b-alert
+        >
+      </b-col>
+    </b-row>
     <b-row>
       <b-col>
         <div class="text mb-2">
@@ -79,6 +99,7 @@
 
 <script lang="ts">
 import { Vue, Component, Provide } from "nuxt-property-decorator";
+import axios, { AxiosError, AxiosResponse } from "axios";
 
 @Component
 export default class extends Vue {
@@ -88,6 +109,8 @@ export default class extends Vue {
   @Provide() public email = "";
   @Provide() public telephone = "";
   @Provide() public message = "";
+  @Provide() public messageSendSuccess = false;
+  @Provide() public messageSendError = false;
 
   private validateEmail(input: string) {
     const reg =
@@ -116,9 +139,24 @@ export default class extends Vue {
       this.validatePhone(this.telephone) === true &&
       this.message.length > 1
     ) {
-      // TODO: Submit the form with Axios
       this.errors = [];
-      console.log("Submit form");
+      this.messageSendError = false;
+      axios
+        .post("http://localhost:3000/contact.php", {
+          firstname: this.firstname,
+          lastname: this.lastname,
+          email: this.email,
+          telephone: this.telephone,
+          message: this.message,
+        })
+        .then((rsp: AxiosResponse) => {
+          // console.log("EMAIL RESPONSE: ", rsp);
+          this.messageSendSuccess = true;
+        })
+        .catch((err: Error | AxiosError) => {
+          // console.log("EMAIL AXIOS CALL ERROR: ", err);
+          this.messageSendError = true;
+        });
     } else {
       this.errors = [];
       if (!this.firstname) {

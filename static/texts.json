@@ -135,6 +135,14 @@
       "en": "On the following page you will find many ways to contact us",
       "fr": "Sur la page suivante, vous trouverez plusieurs façons de nous contacter"
     },
+    "contactHeaderImageTitle": {
+      "en": "Get in touch with us!",
+      "fr": "Prenez contact avec nous!"
+    },
+    "contactHeaderImageText": {
+      "en": "We are happy to answer any of your questions. Please contact us in the following department.",
+      "fr": "Nous sommes heureux de répondre à toutes vos questions. Veuillez nous contacter dans le département suivant."
+    },
     "contactText": {
       "en": "Feel free to reach out to us by using our phone number, e-mail, contact form or by Skype. One of our team members will get back to you. We are happy to help!",
       "fr": "N'hésitez pas à nous contacter en utilisant notre numéro de téléphone, notre courrier électronique, notre formulaire de contact ou par Skype. L'un des membres de notre équipe vous contactera. Nous sommes heureux de vous aider!"
@@ -218,6 +226,18 @@
     "formErrorMessage": {
       "en": "Message required",
       "fr": "Message requis"
+    },
+    "formSendMessageSuccess": {
+      "en": "Your message has been send successfully!",
+      "fr": "Votre message a été envoyé avec succès!"
+    },
+    "formSendMessageError": {
+      "en": "Something went wrong, please try again.",
+      "fr": "Quelque chose s'est mal passé, veuillez réessayer."
+    },
+    "formSendMessage": {
+      "en": "Your message has been send successfully!",
+      "fr": "Votre message a été envoyé avec succès!"
     },
     "repairer": {
       "en": "Repairer",
