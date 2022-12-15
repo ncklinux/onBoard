@@ -1,5 +1,26 @@
 <template>
   <div>
+    <b-container fluid class="m-0 parentBox">
+      <b-row class="mb-3 p-0">
+        <b-col class="subBox p-0">
+          <b-img
+            src="http://localhost:3000/img/service/contact/01.jpg"
+            fluid
+            class="w-100 mb-3"
+          ></b-img>
+          <div class="title pl-3 pb-1">
+            {{
+              $store.state.texts.various.contactHeaderImageTitle[$i18n.locale]
+            }}
+          </div>
+          <div class="text pr-3 pl-3 pb-3">
+            {{
+              $store.state.texts.various.contactHeaderImageText[$i18n.locale]
+            }}
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
     <b-container fluid class="box m-0 p-3">
       <b-row class="mb-2">
         <b-col>
@@ -101,5 +122,14 @@ export default class extends Vue {}
   background-color: white;
   margin-left: 1px;
   margin-right: 1px;
+}
+
+.parentBox {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.subBox {
+  background-color: white;
 }
 </style>
