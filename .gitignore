@@ -94,3 +94,6 @@ sw.*
 
 # Package Lock
 package-lock.json
+
+# Includes (libraries, like PHPMailer etc)
+includes
