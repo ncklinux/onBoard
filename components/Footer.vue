@@ -13,9 +13,9 @@
         </p>
         <ul class="p-0 customerList">
           <li v-for="(item, i) in $store.state.texts.customerService" :key="i">
-            <a :href="item.link" class="customerListLink">{{
+            <nuxt-link :to="localePath(item.link)" class="customerListLink">{{
               item.text[$i18n.locale]
-            }}</a>
+            }}</nuxt-link>
           </li>
         </ul>
       </b-col>
@@ -31,9 +31,9 @@
         </p>
         <ul class="p-0 customerList">
           <li v-for="(item, i) in $store.state.texts.information" :key="i">
-            <a :href="item.link" class="customerListLink">{{
+            <nuxt-link :to="localePath(item.link)" class="customerListLink">{{
               item.text[$i18n.locale]
-            }}</a>
+            }}</nuxt-link>
           </li>
         </ul>
       </b-col>

@@ -60,7 +60,18 @@ export default {
 
   i18n: {
     locales: ['en', 'fr'],
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+    detectBrowserLanguage: {
+      alwaysRedirect: false,
+      fallbackLocale: '',
+      redirectOn: 'root',
+      useCookie: true,
+      cookieAge: 365,
+      cookieCrossOrigin: false,
+      cookieDomain: null,
+      cookieKey: 'i18n_redirected',
+      cookieSecure: false,
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

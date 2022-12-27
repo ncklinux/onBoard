@@ -15,7 +15,7 @@
           class="mb-2"
           v-for="(item, i) in $store.state.texts.menu"
           :key="i"
-          :href="item.link"
+          :to="localePath(item.link)"
           >{{ item.text[$i18n.locale] }}</b-nav-item
         >
       </b-navbar-nav>
