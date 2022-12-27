@@ -1,6 +1,6 @@
 <template>
   <b-navbar toggleable>
-    <b-navbar-brand href="/"
+    <b-navbar-brand :to="localePath('/')"
       ><img src="~assets/svg/logo.svg" width="80" height="26"
     /></b-navbar-brand>
     <b-navbar-toggle target="navbar-toggle-collapse" class="pr-0">

@@ -143,7 +143,7 @@
                   <b-col>
                     <br v-if="item.discountRate" />
                     <span class="material-icons pt-1 pl-1">{{
-                      $store.state.texts.selectedCurrency === "EUR"
+                      $store.state.texts.selectedCurrency === "eur"
                         ? "euro"
                         : "attach_money"
                     }}</span>
