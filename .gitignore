@@ -97,3 +97,6 @@ package-lock.json
 
 # Includes (libraries, like PHPMailer etc)
 includes
+
+# Blender
+*.blend
