@@ -262,6 +262,10 @@
     "repairerSubBoxText02": {
       "en": "It's easy to find online a complete Kit that includes resin, hardener, fiberglass cloth, sanding sponge, mixing sticks and cup, masking sheets and instructions. Just use your favourite search engine and have fun ;)",
       "fr": "Il est facile de trouver en ligne un kit complet comprenant la résine, le durcisseur, le tissu en fibre de verre, l'éponge de ponçage, les bâtons et le gobelet de mélange, les feuilles de masquage et les instructions. Utilisez simplement votre moteur de recherche préféré et amusez-vous ;)"
+    },
+    "errorNotFound": {
+      "en": "Not found",
+      "fr": "Non trouvé"
     }
   },
   "currencies": ["eur", "usd"],
